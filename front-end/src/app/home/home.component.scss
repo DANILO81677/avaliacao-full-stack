@@ -1,0 +1,49 @@
+header{
+    background-color: black;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    color: beige;
+}
+.page-footer{
+    background-color: black;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    color: beige;
+}
+.page-footer h5{
+    font-family: 'Times New Roman', Times, serif;
+    height: 100px;
+    position: relative;
+    left: 50PX;
+    top: 25px;
+  }
+.top-page h1{
+  font-family: 'Times New Roman', Times, serif;
+  height: 100px;
+  position: relative;
+  left: 50PX;
+  top: 25px;
+}
+
+.page-feature-body h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 120px;
+
+}
+.result{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+}
+.page-footer p{
+    position: relative;
+    top: 70px;
+    right: 110px;
+}

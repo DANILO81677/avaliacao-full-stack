@@ -1,0 +1,59 @@
+<header>
+<div class="top-page">
+<h1>Transferencias Agendadas</h1>
+</div>
+</header>
+
+<body>
+<div class="page-feature-body ">
+<hr>
+<h3>Agendar Transferencia</h3>
+<div class="form-register result">
+    <form>
+        <input type="text" placeholder="fromAccount" name="fromAccount" [(ngModel)]="transfer.fromAccount">
+        <input  type="text" placeholder="toAccount" name="toAccount" [(ngModel)]="transfer.toAccount">
+        <input class="myDIV" type= "text" step=0.01 placeholder="value" name="value" [(ngModel)]="transfer.value">
+        <input type="date" placeholder="transferDate" name="transferDate" id="campoData" [(ngModel)]="transfer.transferDate">
+        
+        <button type="button" (click)="register()">Cadastrar</button>
+    </form>
+
+</div>
+<hr>
+<div class="result">
+
+    <table class="table table-striped table-bordered table-condensed table-hover">
+        <thead >
+            <th>id</th>
+            <th>Taxa de Transferencia</th>
+            <th>Tipo de Operação</th>
+            <th>Conta Enviada</th>
+            <th>Data Solicitada</th>
+            <th>Conta Recebida</th>
+            <th>Valor Transferido</th>
+            <th>Data Transferencia</th>  
+        </thead>
+        <tbody>
+            <tr *ngFor="let transfers of transfers">
+                <td>{{transfers.id}}</td>
+                <td>R${{transfers.taxes}}</td>
+                <td>{{transfers.operation_TYPE}}</td>
+                <td>{{transfers.from_ACCOUNT}}</td>
+                <td>{{transfers.transfer_DATE}}</td>
+                <td>{{transfers.to_ACCOUNT}}</td>
+                <td>R${{transfers.value_TRANSFER}}</td>
+                <td>{{transfers.scheduled_DATE}}</td>
+              </tr>
+        </tbody>
+      
+    </table>
+
+</div>
+</div>    
+</body>
+<footer class="bg-dark text-light">
+<div class="page-footer">
+<h5>Avaliação Full Stack</h5>
+<p>Dev: @Danilo Luiz da Silva</p>
+</div>
+</footer>
