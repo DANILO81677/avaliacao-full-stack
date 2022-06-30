@@ -26,7 +26,7 @@ O projeto utiliza Angular e BootStrap no frontend e Java 11, Spring Boot, Spring
 > - Navegue no terminal até a pasta 'evaluation-frontend'.
 > - utilize o seguinte código no terminal:
 
-    evaluation-frontend>ng serve --open
+    ng serve --open
 
 Assim, serão expostos os seguintes endereços:
 
